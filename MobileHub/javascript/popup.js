@@ -1,0 +1,1 @@
+$('#myModal').modal('toggle') // mostra um popup

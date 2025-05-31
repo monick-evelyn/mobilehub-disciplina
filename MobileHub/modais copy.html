@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modais
+    </title>
+    <link rel="stylesheet" href="css/modal2.css">
+    <link rel="stylesheet" href="css/modal_excluir.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/colors.css">
+</head>
+<body>
+    <button onclick="abrirFormModal()">Cadastro/Alteração</button>
+    <button onclick="abrirExcluirModal()">Excluir</button>
+
+    <!-- MODAL FORM-->
+    <div class="modal" id="modal-form">
+      <article class="modal-container">
+
+        <header class="modal-container-header">
+
+          <!-- Titulo -->
+          <h1 class="modal-container-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#034dc9" d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24l0 112c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-112c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"/></svg>
+            Pré-visualização
+          </h1>
+        </header>
+        
+        <section class="modal-container-body rtf">
+
+          <h2>Informações do Projeto</h2>
+          <p class="nome"><strong>Nome: </strong>Quimipédia</p>
+          <p class="turma"><strong>Turma: </strong>2024.1</p>
+          <p><strong>Descrição</strong></p>
+          <p class="descricao">O Quimipédia tem como objetivo principal apresentar de forma clara e acessível as substâncias químicas presentes em uma variedade de produtos do nosso cotidiano. Este aplicativo abrange uma ampla gama de itens, incluindo cosméticos, alimentos, medicamentos e produtos de limpeza. Ao explorar suas principais substâncias, o aplicativo facilita o entendimento sobre suas características químicas e propriedades.</p>
+
+          <p><strong>Link para Download: </strong></p>
+          <a href="https://www.amazon.com.br/IFPB-Quimip%C3%A9dia/dp/B0DPCT3SPP/ref=sr_1_4">https://www.amazon.com.br/IFPB-Quimip%C3%A9dia/dp/B0DPCT3SPP/ref=sr_1_4</a>
+
+          <p><strong>Foto do Aplicativo</strong></p>
+          <img src="https://m.media-amazon.com/images/I/41igAVFHS-L.png" alt="imagem_(nome do APP)">
+
+
+          <h2>Desenvolvedores</h2>
+
+          <!-- COMEÇAR FOR -->
+          <p><strong>Nome do aluno 1: </strong> Rebeca Medeiros</p>
+          <p><strong>Nome do aluno 2: </strong> José Ângelo</p>
+          <p><strong>Nome do aluno 3: </strong> </p>
+          <!-- TERMINAR FOR -->
+    
+        </section>
+        <footer class="modal-container-footer">
+          <button class="button-default close-btn" id="fechar">Voltar</button>
+          <button class="button-default">Concluir</button>
+        </footer>
+      </article>
+    </div>
+
+    <!-- MODAL FORM-->
+    <div class="modal" id="modal-excluir">
+      <article class="modal-container">
+
+        <header class="modal-container-header">
+
+          <!-- Titulo -->
+          <h1 class="modal-container-title">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path fill="#ff0000" d="M256 32c14.2 0 27.3 7.5 34.5 19.8l216 368c7.3 12.4 7.3 27.7 .2 40.1S486.3 480 472 480L40 480c-14.3 0-27.6-7.7-34.7-20.1s-7-27.8 .2-40.1l216-368C228.7 39.5 241.8 32 256 32zm0 128c-13.3 0-24 10.7-24 24l0 112c0 13.3 10.7 24 24 24s24-10.7 24-24l0-112c0-13.3-10.7-24-24-24zm32 224a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"/></svg>
+            Atenção
+          </h1>
+        </header>
+        
+        <section class="modal-container-body rtf">
+          <p>Você realmente deseja excluir esse projeto?</p>
+        </section>
+        <footer class="modal-container-footer">
+          <button class="button-default close-btn" id="fechar">Cancelar</button>
+          <button class="button-default">Excluir</button>
+        </footer>
+      </article>
+    </div>
+
+    <script src="javascript/modal2.js"></script>
+</body>
+</html>
